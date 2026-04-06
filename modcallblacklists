@@ -1,1 +1,9 @@
-
+{
+  "blacklist": [
+    {
+      "id": 296290857,
+      "reason": "Exploiting",
+      "by": "AdminName"
+    },
+  ]
+}
