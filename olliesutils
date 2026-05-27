@@ -1,0 +1,146 @@
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local MainFrame = Instance.new("Frame")
+MainFrame.Name = "MainFrame"
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0.29703, 0, 0.711744, 0)
+MainFrame.BackgroundColor3 = Color3.new(0.12549, 0.12549, 0.12549)
+MainFrame.BorderSizePixel = 0
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.Parent = ScreenGui
+
+local UICorner = Instance.new("UICorner")
+UICorner.Name = "UICorner"
+
+UICorner.Parent = MainFrame
+
+local Outter = Instance.new("UIStroke")
+Outter.Name = "Outter"
+Outter.Color = Color3.new(1, 1, 1)
+Outter.Thickness = 0.8999999761581421
+Outter.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Outter.Parent = MainFrame
+
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Name = "UIGradient"
+UIGradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.376471, 0.290196, 0.721569)), ColorSequenceKeypoint.new(1, Color3.new(0.917647, 0.294118, 1))})
+UIGradient.Parent = Outter
+
+local Line = Instance.new("Frame")
+Line.Name = "Line"
+Line.Position = UDim2.new(0, 0, 0.14, 0)
+Line.Size = UDim2.new(1, 0, 0.001, 0)
+Line.BackgroundColor3 = Color3.new(1, 1, 1)
+Line.BorderSizePixel = 0
+Line.BorderColor3 = Color3.new(0, 0, 0)
+Line.Parent = MainFrame
+
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint.Name = "UIAspectRatioConstraint"
+UIAspectRatioConstraint.AspectRatio = 750
+UIAspectRatioConstraint.Parent = Line
+
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Name = "TextLabel"
+TextLabel.Size = UDim2.new(1, 0, 0.14, 0)
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.Transparency = 1
+TextLabel.Text = "Ollie Utils"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 25
+TextLabel.FontFace = Font.new("rbxasset://fonts/families/Arial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+TextLabel.TextScaled = true
+TextLabel.TextWrapped = true
+TextLabel.Parent = MainFrame
+
+local UIAspectRatioConstraint2 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint2.Name = "UIAspectRatioConstraint"
+UIAspectRatioConstraint2.AspectRatio = 5.357142925262451
+UIAspectRatioConstraint2.Parent = TextLabel
+
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+UITextSizeConstraint.Name = "UITextSizeConstraint"
+
+UITextSizeConstraint.Parent = TextLabel
+
+local UT = Instance.new("TextButton")
+UT.Name = "UT"
+UT.Position = UDim2.new(0.166667, 0, 0.195, 0)
+UT.Size = UDim2.new(0.666667, 0, 0.125, 0)
+UT.BackgroundColor3 = Color3.new(1, 1, 1)
+UT.BackgroundTransparency = 1
+UT.BorderSizePixel = 0
+UT.BorderColor3 = Color3.new(0, 0, 0)
+UT.Transparency = 1
+UT.Text = "Upper Torso "
+UT.TextColor3 = Color3.new(1, 1, 1)
+UT.TextSize = 30
+UT.FontFace = Font.new("rbxasset://fonts/families/Arial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UT.TextScaled = true
+UT.TextWrapped = true
+UT.Parent = MainFrame
+
+local UIAspectRatioConstraint3 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint3.Name = "UIAspectRatioConstraint"
+UIAspectRatioConstraint3.AspectRatio = 4
+UIAspectRatioConstraint3.Parent = UT
+
+local UITextSizeConstraint2 = Instance.new("UITextSizeConstraint")
+UITextSizeConstraint2.Name = "UITextSizeConstraint"
+
+UITextSizeConstraint2.Parent = UT
+
+local WS = Instance.new("TextButton")
+WS.Name = "WS"
+WS.Position = UDim2.new(0.166667, 0, 0.3475, 0)
+WS.Size = UDim2.new(0.666667, 0, 0.125, 0)
+WS.BackgroundColor3 = Color3.new(1, 1, 1)
+WS.BackgroundTransparency = 1
+WS.BorderSizePixel = 0
+WS.BorderColor3 = Color3.new(0, 0, 0)
+WS.Transparency = 1
+WS.Text = "Walk Speed"
+WS.TextColor3 = Color3.new(1, 1, 1)
+WS.TextSize = 30
+WS.FontFace = Font.new("rbxasset://fonts/families/Arial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+WS.TextScaled = true
+WS.TextWrapped = true
+WS.Parent = MainFrame
+
+local UIAspectRatioConstraint4 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint4.Name = "UIAspectRatioConstraint"
+UIAspectRatioConstraint4.AspectRatio = 4
+UIAspectRatioConstraint4.Parent = WS
+
+local UITextSizeConstraint3 = Instance.new("UITextSizeConstraint")
+UITextSizeConstraint3.Name = "UITextSizeConstraint"
+
+UITextSizeConstraint3.Parent = WS
+
+local UIAspectRatioConstraint5 = Instance.new("UIAspectRatioConstraint")
+UIAspectRatioConstraint5.Name = "UIAspectRatioConstraint"
+UIAspectRatioConstraint5.AspectRatio = 0.75
+UIAspectRatioConstraint5.Parent = MainFrame
+
+local UIDragDetector = Instance.new("UIDragDetector")
+UIDragDetector.Name = "UIDragDetector"
+
+UIDragDetector.Parent = MainFrame
+
+script.Parent.UT.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.UpperTorso.Waist:Destroy()
+end)
+
+script.Parent.WS.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed + 50
+end)
+
+
+print("Ollie Utils so tufff ikrrrr.")
