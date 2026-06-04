@@ -81,7 +81,7 @@ UT.BackgroundTransparency = 1
 UT.BorderSizePixel = 0
 UT.BorderColor3 = Color3.new(0, 0, 0)
 UT.Transparency = 1
-UT.Text = "Upper Torso "
+UT.Text = "Lower Torso "
 UT.TextColor3 = Color3.new(1, 1, 1)
 UT.TextSize = 30
 UT.TextTransparency = 0
@@ -139,7 +139,7 @@ UIDragDetector.Name = "UIDragDetector"
 UIDragDetector.Parent = MainFrame
 
 UT.MouseButton1Up:Connect(function()
-	game.Players.LocalPlayer.Character.UpperTorso.Waist:Destroy()
+	game.Players.LocalPlayer.Character.LowerTorso.Waist:Destroy()
 end)
 
 WS.MouseButton1Up:Connect(function()
