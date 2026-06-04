@@ -134,11 +134,11 @@ UIDragDetector.Name = "UIDragDetector"
 
 UIDragDetector.Parent = MainFrame
 
-script.Parent.UT.MouseButton1Up:Connect(function()
+UT.MouseButton1Up:Connect(function()
 	game.Players.LocalPlayer.Character.UpperTorso.Waist:Destroy()
 end)
 
-script.Parent.WS.MouseButton1Up:Connect(function()
+WS.MouseButton1Up:Connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed + 50
 end)
 
